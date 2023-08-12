@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+  --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+  --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+  --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+  --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+  --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+  --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+  --step-6: clamp(3.36rem, calc(2.87rem + 2.45vw), 4.77rem);
+  --step-7: clamp(4.03rem, calc(3.36rem + 3.36vw), 5.96rem);
+  --step-8: clamp(4.84rem, calc(3.93rem + 4.54vw), 7.45rem);
+  --step-9: clamp(5.81rem, calc(4.58rem + 6.10vw), 9.31rem);
+
+}
+h1{
+  font-size: 8rem;
+}
+
+@font-face {
+  font-family: 'gotham_nightsregular';
+  src: url('../public/webfontkit-20230702-143441/gothamnights-e49g-webfont.woff2') format('woff2'),
+       url('../public/webfontkit-20230702-143441/gothamnights-e49g-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Unbounded', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+
+    rgb(var(--background-start-rgb));
+    
+}
+
+.Text-stylish{
+  font-family: 'WebFont';
+}
+
+
+
+@media screen and (width < 755px) {
+  h1{
+    font-size: 6rem;
+  }
+}
+@media screen and (width < 570px) {
+  h1{
+    font-size: 5rem;
+  }
+}
+@media screen and (width < 430px) {
+  h1{
+    font-size: 3rem;
+  }
+}
+
+
+
+
+/* Contact Hover Animation */
+
+.contact_button{
+  position: relative;
+  /* width: 160px;
+  height: 40px; */
+}
+.contact_button::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 90%;
+  height: 90%;
+  z-index: -1;
+  border-radius: 9999px;
+  border: solid white 3px;
+  transition: all 0.3s ease;
+}
+.contact_button:hover{
+  background: #ffffff;
+  color: #000000;
+}
+
+.contact_button:is(:hover)::after {
+  width: 110%;
+  height: 130%;
+  z-index: 1;
+}
+
+
+
+
+.social_link{
+  position: relative;
+  /* width: 160px;
+  height: 40px; */
+}
+.social_link::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 90%;
+  height: 90%;
+  z-index: -1;
+  border-radius: 9999px;
+  border: solid white 3px;
+  transition: all 0.3s ease;
+}
+.social_link:hover{
+  background: #ffffff;
+  color: #000000;
+}
+
+.social_link:is(:hover)::after {
+  width: 130%;
+  height: 130%;
+  z-index: 1;
+}
