@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+{/* @ts-ignore */}
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import {FcDownload} from 'react-icons/fc'
@@ -39,7 +40,7 @@ const ResumePDF = () => {
       <a href="../../public/resume.pdf" className=" px-6 py-2 mx-auto bg-white flex items-center justify-center gap-2 text-black rounded-full mb-6" download={true}>Download <FcDownload/> </a>
       <a href={'/resume.pdf'} target="_blank" className=" px-6 py-2 mx-auto bg-white flex items-center justify-center gap-2 text-black rounded-full mb-6" > Open in new tab </a>
       </div>
-
+      {/* @ts-ignore */}
       <Document
         file="./resume.pdf"       
         className={`flex   justify-center mt-9  items-center`}
