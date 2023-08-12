@@ -21,9 +21,9 @@ const HeroSection = () => {
     <div>
       <nav>
         <ul className='flex space-x-4'>
-          <li>Home</li>
+          <Link href={'/'}>Home</Link>
           <Link href={'/contact'}>Contact</Link>
-          <li>Resume</li>
+          <Link href={'/resume'}>Resume</Link>
         </ul>
       </nav>
     </div>

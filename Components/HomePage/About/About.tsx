@@ -5,7 +5,7 @@ import AOS from 'aos';
 
 const About = () => {
   return (
-    <section className="bg-[#3185FC]">
+    <section className="bg-[#3185FC]" id="about">
 <div className=" container mx-auto px-9  py-9 flex flex-col gap-4">
         <h3 className=" font-bold text-3xl text-black relative" data-aos="fade-right">About Me</h3>
       
