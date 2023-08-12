@@ -12,7 +12,7 @@ const SocialLinks = () => {
           <div className=" flex gap-4">
   
           <Link href={'/contact'} className=" bg-black px-6 py-2 text-white rounded-full contact_button " >Contact Me</Link>
-          <a href={'https://www.linkedin.com/in/nishant-274a77253/'} target="_blank" className=" w-[40px] social_link h-[40px] text-white bg-black rounded-full font-extrabold">
+          <a href={'https://www.linkedin.com/in/nishant-274a77253/'} target="_blank" className=" w-[40px] social_link h-[40px] flex justify-center items-center text-white bg-black rounded-full font-extrabold">
               in
           </a>
           </div>
