@@ -9,7 +9,7 @@ import SocialLinks from '@/Components/HomePage/About/SocialLinks'
 
 const page = () => {
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
     <HeroSection/>
     <About/>
     <Knowledge/>
