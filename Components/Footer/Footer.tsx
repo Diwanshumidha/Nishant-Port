@@ -4,7 +4,7 @@ import BatSignal from '../../public/AboutLogos/BatSignal1.png'
 
 const Footer = () => {
   return (
-    <footer className='bg-[#3185FC]'>
+    <footer className='bg-[#FFBF30] text-[#141414]'>
 
     <div className=' flex justify-between items-end container px-10 mx-auto  pb-4 text--2  '>
         <span>© 2023 Nishant</span>

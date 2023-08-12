@@ -2,7 +2,7 @@ import './BatButton.css'
 const BatButton = () => {
   return (
     <button className=' batbutton'>
-      <span>Contact</span>
+      <span className=' font-semibold'><a href=''>Contact</a></span>
     </button>
   );
 };

@@ -79,7 +79,7 @@ const Page = () => {
           </div>
 
           <textarea
-            className="form-control max-w-lg bg-black text-white w-full border-2 border-[#3185FC] outline-none py-2 px-4 rounded-md"
+            className="form-control max-w-lg bg-black text-white w-full border-2 border-[#FFBF30] outline-none py-2 px-4 rounded-md"
             rows={10}
             placeholder="MESSAGE......"
             name="message"
@@ -89,7 +89,7 @@ const Page = () => {
           ></textarea>
 
           <button
-            className="btn btn-primary bg-white text-black hover:bg-[#3185FC] rounded-md hover:text-white  send-button mt-6 h-10  overflow-hidden justify-center transition-all duration-200"
+            className="btn btn-primary bg-white text-black hover:bg-[#FFBF30] rounded-md hover:text-white  send-button mt-6 h-10  overflow-hidden justify-center transition-all duration-200"
             id="submit"
             type="submit"
             value="SEND"
@@ -110,22 +110,11 @@ const Page = () => {
                 <span className="  text-lg">Chandigarh, India</span>
               </div>
             </li>
-            {/* <li className="list-item ">
-            <div className="contact-icon-container flex justify-start items-center ml-2 gap-2 ">
-              <BsFillTelephoneFill/>
-            <span className="contact-text   text-lg text-gray-500">
-                  <a href="tel:1-212-555-5555" title="Give me a call">
-                    (212) 555-2368
-                  </a>
-                </span>
-            </div>
-               
-            </li> */}
             <li className="list-item mb-4 ">
               <div className="contact-icon-container flex justify-start items-center ml-2 gap-2 ">
                 <BsFillTelephoneFill />
                 <span className="contact-text max-sm:!text-md text-gray-500">
-                  <a href="mailto:#" title="Send me an email">
+                  <a href="mailto:nishantmidha1@gmail.com" title="Send me an email">
                     Nishantji0212@gmail.com
                   </a>
                 </span>
@@ -138,7 +127,7 @@ const Page = () => {
           <ul className="social-media-list flex justify-center items-center list-none ml-0 mr-4  py-5 my-8">
             <li className=" !flex justify-center items-center">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/nishant-274a77253/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
@@ -150,7 +139,7 @@ const Page = () => {
             </li>
             <li className=" !flex justify-center items-center">
               <a
-                href="#"
+                href="https://discordapp.com/users/nishant_jii"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
@@ -162,7 +151,7 @@ const Page = () => {
             </li>
             <li className=" !flex justify-center items-center">
               <a
-                href="#"
+                href="https://www.instagram.com/Nishant_jii"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
@@ -174,7 +163,7 @@ const Page = () => {
             </li>
             <li className=" !flex justify-center items-center">
               <a
-                href="#"
+                href="https://heylink.me/nishant_jii/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
